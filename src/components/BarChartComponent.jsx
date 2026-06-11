@@ -1,23 +1,32 @@
 import {BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer} from "recharts"
-
-
-const data=[
-  {name:"Mon", users:200},
-  {name:"Tue", users:300},
-  {name:"Wed", users:250},
-  {name:"Thu", users:400},
-  {name:"Fri", users:350},
-]
+import { usersData } from "../data/chartData";
 
 
 
-function BarChartComponent(){
+
+
+function BarChartComponent({period, setPeriod}){
+ 
+const chartData=usersData[period]
   return(
     <div className="chart-container">
-      <h3>Daily Users</h3>
-
+      <h3>Users</h3>
+      <div className="chart-filters">
+        <button
+          className={period === "weekly" ? "active" :""}
+          onClick={()=>setPeriod("weekly")}>Weekly
+        </button>
+        <button
+          className={period === "monthly" ? "active" :""}
+          onClick={()=>setPeriod("monthly")}>Monthly
+        </button>
+        <button
+          className={period === "yearly" ? "active" :""}
+          onClick={()=>setPeriod("yearly")}>Yearly
+        </button>
+      </div>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={data}>
+        <BarChart data={chartData}>
           <CartesianGrid strokeDasharray="5 5" />
           <XAxis dataKey="name" />
           <YAxis />

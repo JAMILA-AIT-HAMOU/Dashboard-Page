@@ -9,6 +9,7 @@ function App(){
 
   const [isOpen, setIsOpen]=useState(true)
   const [darkMode, setDarkMode]=useState(false)
+  const [period, setPeriod]=useState("monthly")
 
   return(
     <div className={`dashboard ${darkMode ? "darkMode" : ""}`}>
@@ -24,8 +25,12 @@ function App(){
           <StatCard title="Growth" value="+15%" />
         </div>
         <div className="charts">
-          <LineChartComponent />
-          <BarChartComponent />
+          <LineChartComponent 
+            period={period}
+            setPeriod={setPeriod}/>
+          <BarChartComponent
+            period={period}
+            setPeriod={setPeriod} />
         </div>
       </div>
     </div>

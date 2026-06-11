@@ -155,7 +155,25 @@ body{
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
-
+.chart-filters{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.chart-filters button{
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.chart-filters button:hover{
+  box-shadow: 1px 1px 3px grey;
+  opacity: 0.6;
+}
+.chart-filters button.active{
+  background: #10b981;
+  color: white;
+}
 
 /*Responsive*/
 
