@@ -22,6 +22,7 @@ body{
 }
 .sidebar.open{
   width: 130px;
+  height: 100%;
 }
 .sidebar.closed{
   width: 30px;

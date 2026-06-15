@@ -20,10 +20,10 @@ function App(){
           toggleDarkMode={()=>setDarkMode(!darkMode)}
           darkMode={darkMode}/>
         <div className="stats">
-          <StatCard title="Revenue" value="$12,450" />
-          <StatCard title="Users" value="1,230" />
-          <StatCard title="Orders" value="320" />
-          <StatCard title="Growth" value="+15%" />
+          <StatCard title="Revenue" value={12450}  prefix="$" />
+          <StatCard title="Users" value={1230} />
+          <StatCard title="Orders" value={320}/>
+          <StatCard title="Growth" value={15} prefix="+" suffix="%"/>
         </div>
         <div className="charts">
           <LineChartComponent 
