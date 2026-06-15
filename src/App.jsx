@@ -4,6 +4,7 @@ import StatCard from "./components/StatCard";
 import LineChartComponent from "./components/LineChartComponent";
 import BarChartComponent from "./components/BarChartComponent";
 import { useState } from "react";
+import RecentActivity from "./components/RecentActivity";
 
 function App(){
 
@@ -32,6 +33,7 @@ function App(){
             period={period}
             setPeriod={setPeriod} />
         </div>
+        <RecentActivity />
       </div>
     </div>
   )

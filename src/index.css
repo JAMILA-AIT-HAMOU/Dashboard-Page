@@ -174,7 +174,29 @@ body{
   background: #10b981;
   color: white;
 }
-
+.activity-container{
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.dashboard.darkMode .activity-container{
+  background-color: #1e293b;
+  color: white;
+}
+.activity-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.activity-table th, .activity-table td{
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.activity-table th{
+  font-weight: bolder;
+}
 /*Responsive*/
 
 @media(max-width:1024px){
