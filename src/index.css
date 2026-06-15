@@ -190,12 +190,42 @@ body{
   border-collapse: collapse;
 }
 .activity-table th, .activity-table td{
-  padding: 12px;
+  padding: 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
 .activity-table th{
   font-weight: bolder;
+}
+.status{
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.completed{
+  background-color: #d1fae5;
+  color:#065f46 ;
+}
+
+.pending{
+  background-color: #fef3c7;
+  color:#92400e ;
+}
+
+.failed{
+  background-color: #fee2e2;
+  color:#991b1b;
+}
+.activity-table tbody tr{
+  transition: backgr-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.activity-table tbody tr:hover{
+  background-color: #f8fafc;
+}
+.dashboard.darkMode .activity-table tbody tr:hover{
+  background-color: #334155;
 }
 /*Responsive*/
 
