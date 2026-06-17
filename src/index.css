@@ -186,6 +186,31 @@ body{
   background-color: #1e293b;
   color: white;
 }
+.activity-container .search-container{
+  position: relative;
+}
+.activity-container .search-container .search-icon{
+  position: absolute;
+  margin-left: 20px;
+  top: 43%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+.activity-container input{
+  width: 100%;
+  padding: 12px 40px;
+  margin: 15px 0 20px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.activity-container input:focus{
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(59, 246, 156, 0.2);
+}
 .activity-table{
   width: 100%;
   border-collapse: collapse;

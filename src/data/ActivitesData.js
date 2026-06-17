@@ -23,6 +23,30 @@
     action: "Cancelled Order",
     status: "Failed"
   },
+  {
+    id: 5,
+    user: "mouhamedd",
+    action: "Updated Profile",
+    status: "Pending"
+  },
+  {
+    id: 6,
+    user: "najib",
+    action: "Submitted Report",
+    status: "Completed"
+  },
+  {
+    id: 7,
+    user: "yassine",
+    action: "Cancelled Order",
+    status: "Failed"
+  },
+  {
+    id: 8,
+    user: "said",
+    action: "Purchased Plan",
+    status: "Completed"
+  },
 ]
 
 export default activites;
