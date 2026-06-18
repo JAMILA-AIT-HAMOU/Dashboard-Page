@@ -73,6 +73,8 @@ body{
 }
 .dashboard.darkMode .header{
   background-color: #0f172a;
+  
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 .dashboard.darkMode input{
   background-color: #1e293b;
@@ -80,17 +82,24 @@ body{
   border: 1px solid white;
 }
 .main-content{
-  padding: 30px;
+  padding:100px 30px 30px;
   background-color: #f1f5f9;
   min-height: 100vh;
 }
 .header{
+  position:fixed;
+  top: 0;
+  left: 0px;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
-  position: relative;
-  z-index: 1100;
+  padding: 20px 30px;
+  background-color: #f1f5f9;
+  z-index:1100;
+  box-sizing:border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease;
 }
 .header button{
   padding: 4px 8px;
@@ -273,16 +282,19 @@ body{
     top:0;
     z-index: 1000;
     height: 100%;
-    margin-top: 5rem;
   }
   .sidebar.open{
     left: 0;
   }
   .main-content{
-    padding: 20px;
+    padding: 100px 20px 20px;
   }
   .header input{
     width: 350px;
+  }
+  .header{
+    left: 0px;
+    width: 100%;
   }
 }
 @media(max-width:600px){
