@@ -1,4 +1,6 @@
-# React Analyticts Dashboard 
+# React Analyticts Dashboard
+
+![Dashboard Preview](./src/assets/images/Dashboard%20Website.png)
 
 A modern and responsive analytics dashboard built with React, Vite and Rechaarts. The dashboard provides data visualization, activity tracking, dark mode support, and Interactive UI components.
 
@@ -32,19 +34,19 @@ A modern and responsive analytics dashboard built with React, Vite and Rechaarts
   - React Icones
   - Git & GitHub
 
-## ScreenShots
+## Screenshots
 
 ### Desktop View
 
-  ![Desktop Dashboard](./src/assets/ScreenShots/Descktop%20View.png)
+  ![Desktop Dashboard](./src/assets/images/Descktop%20View.png)
 
 ### Dark Mode
 
-  ![Desktop Dashboard](./src/assets/ScreenShots/Dark%20Mode%20View.png)
+  ![Desktop Dashboard](./src/assets/images/Dark%20Mode%20View.png)
 
 ### Mobile View
 
-  ![Desktop Dashboard](./src/assets/ScreenShots/Mobile%20View.png)
+  ![Desktop Dashboard](./src/assets/images/Mobile%20View.png)
 
 
 
