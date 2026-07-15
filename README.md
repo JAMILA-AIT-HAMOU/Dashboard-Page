@@ -57,7 +57,7 @@ A modern and responsive analytics dashboard built with React, Vite and Rechaarts
 
   git clone https://github.com/JAMILA-AIT-HAMOU/dashboard-Page.git
 
-## Future Improvements
+## Future Improvements "V1 completed"
 
   - Notification Dropdown
   - User Profile Menu
